@@ -1,0 +1,64 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font: 14px/1.4 -apple-system,
+    BlinkMacSystemFont,
+    "San Francisco",
+    "Segoe UI",
+    Roboto,
+    Ubuntu,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.webview {
+  height: 100%;
+}
+
+.webview:focus {
+  outline: none;
+}
+
+.header {
+  height: 24px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  border-bottom: 1px solid #e2e2e2;
+  -webkit-app-region: drag;
+  user-select: none;
+}
+
+.header .app-title {
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.is-darwin .header {
+  display: flex;
+}
+
+.is-darwin .webview {
+  height: calc(100% - 24px);
+}
+
+.is-dark-mode {
+  background: #24282a;
+}
+
+.is-dark-mode .header {
+  background: #1c1c1c;
+  border-bottom: 1px solid #151515;
+  border-right: 1px solid #000;
+  color: #cbd0d0;
+}

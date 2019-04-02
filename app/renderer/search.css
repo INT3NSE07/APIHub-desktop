@@ -1,0 +1,81 @@
+.searcher {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  background: #eee;
+  border: 1px solid #d7d7d7;
+  border-top: none;
+  border-right: none;
+  display: flex;
+  border-radius: 0 0 0 3px;
+}
+
+.is-darwin .searcher {
+  top: 24px;
+}
+
+.searcher-progress {
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  margin-right: 5px;
+  justify-content: center;
+  min-width: 34px;
+}
+
+.searcher-action {
+  border: 1px solid #d2d2d2;
+  background: white;
+  outline: none;
+  padding: 0 8px;
+  cursor: pointer;
+  font-size: .875rem;
+  height: 30px;
+  overflow: hidden;
+}
+
+.searcher-prev {
+  border-radius: 3px 0 0 3px;
+}
+
+.searcher-close {
+  border-radius: 0 3px 3px 0;
+}
+
+.searcher-action:not(:last-child) {
+  border-right: none;
+}
+
+.searcher-action  svg {
+  width: 14px;
+  height: 14px;
+}
+
+.searcher-action:hover {
+  background: #f0f0f0;
+}
+
+.searcher-input {
+  border: 1px solid #d2d2d2;
+  border-radius: 3px;
+  padding: 0 5px;
+  outline: none;
+  font-size: .875rem;
+  height: 30px;
+  margin-right: 5px;
+  width: 200px;
+}
+
+.searcher-input:focus {
+  border-color: #35b5f4;
+  box-shadow: 0 0 1px #35b5f4;
+}
+
+.searcher__hidden {
+  display: none;
+}
+
+.searcher-progress__disabled {
+  display: none;
+}

@@ -1,0 +1,30 @@
+{
+  "name": "APIHub",
+  "productName": "APIHub",
+  "version": "0.1.1",
+  "description": "Desktop client for apihub.cf",
+  "author": {
+    "name": "INT3NSE",
+    "email": "d.jonathanpaul@gmail.com",
+    "url": "https://bitbucket.com/INT3NSE07"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "apihub",
+    "app",
+    "electron",
+    "desktop"
+  ],
+  "homepage": "https://bitbucket.org/INT3NSE07/apihub",
+  "dependencies": {
+    "electron-context-menu": "^0.9.1",
+    "electron-debug": "^1.1.0",
+    "electron-is-dev": "^0.1.2",
+    "electron-log": "^2.2.6",
+    "electron-store": "^1.1.0",
+    "mkdirp": "^0.5.1"
+  }
+}
